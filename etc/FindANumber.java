@@ -21,7 +21,6 @@ public class FindANumber {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		StringBuilder sb = new StringBuilder();
 		Set<Integer> set = new HashSet<>();
 		
 		int n = Integer.parseInt(br.readLine());
