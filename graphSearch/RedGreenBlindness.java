@@ -9,7 +9,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class RedGreenBlindness {
-	
+
 	// 10026¹ø 	2021.02.19.
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
@@ -27,7 +27,7 @@ public class RedGreenBlindness {
 				arr[i][j]=s.charAt(j);
 			}
 		}
-		
+
 		// BFS
 		int[] result = count(arr, n);
 
@@ -52,7 +52,7 @@ public class RedGreenBlindness {
 		for(int i = 0; i<n; i++) {
 			for(int j = 0; j<n; j++) {
 				if(!visited[i][j]) {
-					visited=area(i, j, arr[i][j], arr, visited, false);
+					visited=area(i, j, arr, visited, false);
 					count++;
 				}
 			}
@@ -147,34 +147,3 @@ public class RedGreenBlindness {
 	}
 
 }
-
-
-class Location{
-
-	int x;
-	int y;
-	int count;
-
-	public Location(int x, int y, int count) {
-		this.x=x;
-		this.y=y;
-		this.count=count;
-	}
-
-	public Location(int x, int y) {
-		this(x, y, 0);
-	}
-
-	public int getX() {
-		return x;
-	}
-
-	public int getY() {
-		return y;
-	}
-
-	public int getCount() {
-		return count;
-	}
-}
-
