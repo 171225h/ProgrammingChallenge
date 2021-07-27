@@ -11,6 +11,12 @@ import java.util.StringTokenizer;
 
 public class PokemonMaster {
 
+	// 1620번 2021.07.27.
+	
+	/*
+	 * 늘 map하나만 써서 시간초과나길래
+	 * 열받아서 두개쓰기로했다.
+	 */
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
